@@ -1,7 +1,32 @@
+# Environment variables
 .env
+.env.local
+
+# Python cache & virtual environments
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
 venv/
 .venv/
+ENV/
+
+# Database files
 workspaces.db
+*.sqlite
+*.sqlite3
+*.db
+
+# Streamlit secrets & runtime
 .streamlit/secrets.toml
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Output blueprints generated locally
+workspace_blueprint.txt
