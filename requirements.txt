@@ -1,0 +1,5 @@
+streamlit>=1.30.0
+crewai>=1.15.0
+crewai[google-genai]
+google-genai>=1.0.0
+python-dotenv>=1.0.0

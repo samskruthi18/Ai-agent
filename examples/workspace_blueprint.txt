@@ -1,0 +1,108 @@
+# AI Workspace Blueprint: VoltFleet Technologies Pvt. Ltd.
+
+## 1. Required Departments
+
+VoltFleet Technologies operates across seven specialized departments, structured to support its cloud-based B2B SaaS platform for electric delivery vehicle fleet management.
+
+1. **Software Development** (15 employees)
+   - *Scope:* Product architecture, core SaaS platform development, QA testing, infrastructure deployment, and maintenance.
+2. **Vehicle Operations** (10 employees)
+   - *Scope:* Live fleet tracking, vehicle maintenance coordination, charging analytics, and operational reporting.
+3. **Customer Support** (8 employees)
+   - *Scope:* B2B client ticket management, technical issue resolution, and customer success tracking.
+4. **Sales & Marketing** (8 employees)
+   - *Scope:* Lead generation, CRM pipeline management, digital campaigns, and content creation for logistics firms.
+5. **Human Resources** (4 employees)
+   - *Scope:* Recruitment, onboarding, employee records, attendance, and internal engagement.
+6. **Finance** (4 employees)
+   - *Scope:* Subscription billing, invoicing, expenses, payroll coordination, and financial reporting.
+7. **IT Administration** (6 employees)
+   - *Scope:* Enterprise system administration, access management, infrastructure health, and end-user technical support.
+
+---
+
+## 2. Employee Roles & Hierarchy
+
+### Organizational Hierarchy
+- **Level 1:** Founder / CEO
+- **Level 2:** Department Heads (CTO, Operations Manager, Support Manager, Sales & Marketing Head, HR Manager, Finance Manager, IT Head)
+- **Level 3:** Team Leads / Managers (Engineering Leads, Operations Leads, Support Lead, Sales/Marketing Managers, Functional Leads)
+- **Level 4:** Employees / Executives / Specialists (Developers, QA, DevOps, Analysts, Executives)
+
+### Role Breakdown & Responsibilities
+- **Software Development (15):** CTO (1), Team Leads (2), Frontend Developers (4), Backend Developers (3), QA Engineers (3), DevOps Engineers (2).
+- **Vehicle Operations (10):** Operations Manager (1), Team Leads (2), Fleet Analysts (3), Maintenance Executives (2), Operations Executives (2).
+- **Customer Support (8):** Support Manager (1), Support Team Lead (1), Support Executives (4), Technical Support Specialists (2).
+- **Sales & Marketing (8):** Sales & Marketing Head (1), Sales Manager (1), Sales Executives (2), Marketing Manager (1), Digital Marketing Executives (2), Content Specialist (1).
+- **Human Resources (4):** HR Manager (1), Recruiter (1), HR Executives (2).
+- **Finance (4):** Finance Manager (1), Accountants (2), Finance Executive (1).
+- **IT Administration (6):** IT Head (1), System Administrators (2), IT Support Engineers (2).
+
+---
+
+## 3. AI Assistants
+
+Each department will be equipped with a tailored AI assistant designed with specific operational capabilities and role-based guardrails.
+
+1. **Developer AI:** Code snippet generation, documentation search, bug triage assistance, CI/CD pipeline health checks, and Jira task automation.
+2. **Operations AI:** Fleet performance summaries, maintenance schedule optimization, charging analytics aggregation, and operational report generation.
+3. **Support AI:** Ticket categorization and prioritization, suggested knowledge base responses for B2B queries, sentiment analysis, and escalation drafting.
+4. **Sales & Marketing AI:** CRM lead scoring, email campaign drafting, market research summaries, and content outline generation.
+5. **HR AI:** Candidate resume screening, onboarding checklist tracking, employee FAQ retrieval, and leave policy summarization.
+6. **Finance AI:** Invoice parsing, expense report anomaly detection, financial data summarization, and budget tracking assistants.
+7. **IT AI:** System log analysis, user access request drafting, IT support ticket routing, and infrastructure health summarization.
+
+---
+
+## 4. Business Workflows & Automation
+
+### Core Operational Workflows
+- **Software Development:** Sprint planning (Jira) → Coding (VS Code) → Code Review & Testing (GitHub/QA) → Production Deployment (DevOps).
+- **Vehicle Operations:** Live telemetry monitoring → Issue detection → Maintenance scheduling → Client operations reporting.
+- **Customer Support:** Ticket ingestion → AI categorization & routing → Technical escalation (if required) → Resolution & feedback.
+- **Sales & Marketing:** Lead capture (CRM) → Outreach campaigns → Pipeline tracking → Client onboarding handoff.
+- **HR & Finance:** Onboarding documentation → Payroll processing → Expense/invoice approvals → Financial reporting.
+
+### Automated Workflows (Low-Risk vs. Human-in-the-Loop)
+- **Fully Automated (Low-Risk):** Email sorting & prioritization, meeting scheduling, routine document search/retrieval, basic meeting summaries, and internal knowledge retrieval.
+- **Human-in-the-Loop (Mandatory Approval Gates):**
+  1. Payments and financial transactions (Finance Manager / CEO).
+  2. Hiring and candidate rejections (HR Manager / CEO).
+  3. Changes to employee records (HR Manager).
+  4. Deletion of important files/codebases (Authorized Department Manager / CTO).
+  5. Production deployments (CTO / Engineering Lead).
+  6. Changes to access permissions (IT Head / Security Administrator).
+  7. External emails sent on behalf of the company (Relevant Department Manager).
+
+---
+
+## 5. Software Integrations
+
+The workspace will unify VoltFleet's existing multi-tool ecosystem into a single centralized platform interface:
+
+- **Communication:** Slack, Microsoft Teams
+- **Email & Calendar:** Gmail, Outlook, Google Calendar, Outlook Calendar
+- **Productivity & Storage:** Google Drive (Primary file storage)
+- **Engineering & Development:** Jira, GitHub, VS Code, PostgreSQL, AWS Cloud Infrastructure
+- **Integration Protocol:** Unified OAuth-based authentication enforcing strict role-based access control (RBAC) across all integrated nodes.
+
+---
+
+## 6. Security & Access Requirements
+
+- **Authentication:** Enterprise Single Sign-On (SSO) with Multi-Factor Authentication (MFA) enforced for all 55 employees.
+- **Role-Based Access Control (RBAC):**
+  - *CEO:* Full organizational visibility across analytics, performance, and management reports.
+  - *Department Heads / Managers:* Complete visibility into respective departmental data, task progression, and approval queues.
+  - *Team Leads:* Team-level task, project, and assignment oversight.
+  - *IT Administrators:* System health, user management, and logs—*strictly restricted from viewing confidential HR and Finance content*.
+  - *Departmental Boundaries:* Strict data partitioning ensuring Software Development, Vehicle Operations, Support, Sales, HR, Finance, and IT only access authorized operational assets.
+- **Audit & Compliance:** Comprehensive logging of administrative actions, file deletions, permission modifications, and high-impact AI executions to meet enterprise SaaS compliance standards.
+
+---
+
+## 7. Assumptions Identified
+
+1. **Tool Coexistence:** It is assumed that VoltFleet will maintain its current tool flexibility (utilizing both Gmail/Outlook and Slack/Microsoft Teams) by bridging them through the centralized workspace dashboard rather than forcing an immediate platform migration.
+2. **Cloud Deployment:** Deployment will occur on secure cloud infrastructure (AWS) to natively align with their existing technical stack.
+3. **AI Provider Layer:** An enterprise-grade LLM orchestration layer will be integrated to power the 7 distinct department assistants with context-aware, permission-bound retrieval-augmented generation (RAG).
